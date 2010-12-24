@@ -21,9 +21,9 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $actionStack = Zend_Controller_Action_HelperBroker::getStaticHelper('actionStack');
         $actionStack->actionToStack('zoneHeaderOut','zone');
         $actionStack->actionToStack('navigation','global');
-        $actionStack->actionToStack('banner','global','', array("test" => "toto"));
-        $actionStack->actionToStack('zoneHeaderIn','zone');
-        Zend_Debug::dump($actionStack);
+        $actionStack->actionToStack('banner','global',''/*, array("test" => "toto")*/);
+		$actionStack->actionToStack('zoneHeaderIn','zone');
+//        Zend_Debug::dump($actionStack);
     }
 
     public function run()
